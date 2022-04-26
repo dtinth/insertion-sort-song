@@ -1,8 +1,10 @@
 import * as animation from './animation'
+import song from './isort.mp3?url'
 
 let currentAnimation = animation
 
 const audio = document.getElementById('audio') as HTMLAudioElement
+audio.src = song
 
 function seekToFrame(frameNumber: number) {
   currentAnimation.renderAnimation(frameNumber)
